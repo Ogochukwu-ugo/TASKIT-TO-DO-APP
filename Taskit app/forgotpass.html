@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/app logo1.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Forgot Password Page</title>
+    <script src="./form-validation.js"></script>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="imagePics">
+            <img src="./assets/Signin img.png" alt="signup-image">
+            <div class="image-text">
+                <h2>Create and Organize New Tasks</h2>
+                <p>Create and Organize your tasks in order of priority</p>
+            </div>
+        </div>
+        <div class="formSection">
+                <div class="logo-img">
+                    <img src="./assets/app logo.png" alt="logo" height="50px">
+                </div>
+                
+                <h2 id="signup">Password Assistance</h2>
+                <div class="notice-detail">
+                    <div class="notice">
+                        <img src="./assets/attention.png" alt="notice-icon" height="16px">
+                    </div>
+                    <h5>
+                        Please enter the e-mail address associated with your account. We will send a link to this e-mail address to reset your password.
+                    </h5>
+                </div>
+                
+                <form method="post" class="forgot-form"  >
+                    
+                    <div class="email-login">
+                        <label for="Email">Email</label><br>
+                        <input type="email" id="email" placeholder="Enter email" required>
+                        <img src="./assets/Vector mail.png" alt="mail-icon" height=" 10px"  id="mail-icon">
+                    </div>
+                    
+                    
+                    <button type="submit" id="forgotpass-btn">RESET PASSWORD</button>
+                
+                    
+                </form>
+
+                <div class="login-line"></div>
+
+           
+        </div>
+    </div>
+</body>
+</html>

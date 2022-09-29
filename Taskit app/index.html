@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskit Sign Up Page</title>
+    <link rel="icon" type="image/x-icon" href="./assets/app logo1.png">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="mainContainer">
+        <!--------------------------------------SignUp Form Image Section------------------------------------------------>
+        
+        <div class="imagePics">
+            <img src="./assets/Signin img.png" alt="signup-image">
+            <div class="image-text">
+                <h2>Create and Organize New Tasks</h2>
+                <p>Create and Organize your tasks in order of priority</p>
+            </div>
+        </div>
+
+        <!--------------------------------------------SignUp Form Section----------------------------------------------------------->
+
+        <div class="formSection">
+
+                <!---------------------------------------Logo Section------------------------------------------------>
+            <div class="logo-img">
+                <img src="./assets/app logo.png" alt="logo" height="50px">
+            </div>
+            
+            <h2 id="signup">Sign Up</h2>
+                
+
+                <!-------------------------------------------Form Part------------------------------------------------------>
+            <form method="post" class="signup-form" name="form" id="form" onsubmit="return register()">
+                <div class="username">
+                    <label for="Username">Username</label><br>
+                    <input type="text"  id="userName" name="userName"  placeholder="Enter username" required>
+                    <img src="./assets/Vector person.png" alt="person-icon" height="12px" id="person-icon">
+                </div>
+                <div class="email">
+                    <label for="Email">Email</label><br>
+                    <input type="email"  id="email"  name="email"  placeholder="Enter email" required>
+                    <p id="result"></p>
+                    <img src="./assets/Vector mail.png" alt="mail-icon" height=" 10px"  id="mail-icon">
+                </div>
+                <div class="password">
+                    <label for="Password">Password</label><br>
+                    <input type="password"  id="password" name="password"  placeholder="Enter password" required>
+                    <p id="message"></p>
+                    <img src="./assets/Vector lock.png" alt="lock-icon" height=" 12px"  id="lock-icon">
+                    <img src="./assets/Vector pass.png" alt=" hide-icon" height="10px"  id="hide-icon">
+                </div>
+                
+                    <button type="submit" id="form-btn">REGISTER</button>
+                
+                
+            </form>
+
+            <div class="line"></div>
+
+            <a href="./login.html" id="account">Already have an account? <span>Log In</span></a>
+        
+        </div>
+    </div>
+    <script src="./form-validation.js" ></script>
+</body>
+
+</html>
